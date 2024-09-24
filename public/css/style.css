@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla:ital,opsz,wght@0,8..30,100..900;1,8..30,100..900&display=swap');
+
+:root{
+    --main-bg : #1e272e;              /* this root  sae ham khai bhi same color likh saktae hai using --main-bg or main color varaible jaisa hai yae samjho assign value and use*/
+    --main-color : #0097e6;
+}
+
+html{
+    font-size: 62.5%;         /* to make website responsive because of this now 1 rem = 10 px*/
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column; ;
+}
+
+.row {
+    margin: 0;            /* left mae webpage scrool ho ja raha tha wo ab nhi hoga */
+}
+
+.main_menu {
+    background-color: var(--main-bg);     /* used root here */
+}
+
+.navbar{
+    color: white;
+    background-color: var(--main-bg);
+    padding: 2rem 0;                         /* 2rem is for uppar neechae 0 is for left right remember esse navbar chaura ho gaya */
+}
+
+.navbar li{
+    margin-left: 2rem;           /* links kae beech mae gap kae liyae */
+}
+
+.navbar a{
+    color: white;
+    font-size: 1.8rem;
+}
+
+.navbar a:hover{
+    color: var(--main-color);
+}
+
+.navbar-toggler{
+    background-color: grey;            /* for phone view */
+}
+
+.fa-snowflake{
+    transition: all linear;                           /* for animation  */
+    animation: rot 2s linear infinite;             /* type ani we will get suggestion 6-7 choices choose accordingly */
+    color: var(--main-color);
+}
+
+@keyframes rot {
+    0%{
+        transform: rotate(0deg);
+    }                                                  /* always add prefix when adding animation we can also use to from keyword but this gives us more options */
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+/* main header */
+
+.main_header_left{
+    height: 70 rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;                
+    align-items: flex-start;
+}
+
+.main_header_right{                                           /* same property given to both */
+    height: 70rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.main_header_left p{
+    font-size: 2rem;
+    display: inline;
+}
+
+.main_header_left h1{
+    font-size: 4rem;
+    text-transform: capitalize;
+    margin: 1 rem 0 4rem 0;            /*  1rem from top   0 from right  4 from bottom and 0 from left*/
+}
+
+.main_header_left .text_clr{               /* main header likh kae usko ar specific banae ki sirf usi ko karo*/
+    color: var(--main-color);
+}
+.main_header_left button{
+    border: none;
+    padding: 0.8rem 1.8rem;
+    font-size: 1.4rem;
+    border-radius: 2rem;
+    text-transform: uppercase;
+    box-shadow: 0 8px 6px -6px black;        /* horizontal 0 vertical(kitna neechae khiskanan hai ) 8 px  kitna blur so 6px kitna spread karna hai so -6 px*/
+    outline: none;
+}
+.main_header_left button:hover{
+    box-shadow: 0 8px 6px -6px var(--main-color);
+}
+
+.main_header_right .carousel-inner img {
+    width: 100%;
+    height: auto;
+}
+
+.main_header_right figure img{
+    width: 100%;
+    height: 420px;
+    filter: drop-shadow(0 0.5rem 1rem black);
+}
+
+
+
+/* footer code */
+
+footer{
+    position: relative;
+    top: 40px;
+    width: 100%;
+    background-color: var(--main-bg);
+    margin: auto;                                                   /*footer code in copy */
+}
+
+ footer p{
+    margin: 0;
+    text-align: center;
+    color: white;
+    line-height:5rem;
+    font-size: 1.4rem;
+ }
+ 
+/* error page styling */
+.errimg img{
+    position: relative;
+    top: -3rem;
+    height:30rem;
+    width: 60rem;
+    margin-top: 13rem;
+ }
+
+
+ /* weather page styling */
+
+.temp_form{
+    width: 60%;
+    position: relative;
+    margin: 10rem auto 6rem;   /* jo search jaisa hai bana hua uska page sae uppar neechae hona top sae 6 left right auto bootom 6 */
+}
+
+.temp_form input[type="text"] {      /*  jo bhi user input daega usko aese hi likhate hai  */
+    width: 100%;
+    padding: 2rem 5rem 2rem 2rem;
+    background: black;
+    color: white;
+    outline: none;
+    border: none;
+    font-size: 1.7rem;
+    border-radius: 3rem;
+}
+
+::placeholder{             /* andar wale tags ko aese hi likhtae hai with ::  */
+    color: rgb(213, 210, 210);
+}
+
+.temp_form input[type = "submit"] {
+    position: absolute;    /*  esses jo search button tha wo form mae andar ghus paya kisi ek object ko kisi pae impose karwana ho tab use position and fir top bootom right ho jae ga */
+    top: 5px;
+    right: 5px;
+    bottom: 5px;                    
+    border: none;
+    background: rgb(143, 168, 242);
+    padding: 0 3rem;
+    border-radius: 3rem;
+    color: white;
+    font-size: 1.6rem;
+}
+
+.temp_form input[type="submit"]:hover {
+    color: #0097e6;
+    background: rgb(143, 168, 242);
+}
+ .tempInformation{                       /*  tempinfo box styling */
+    width: 50rem;             
+    margin: auto;      /* ese center par aagya */
+    min-height: 20rem;
+    background-color: #323544;
+    border-radius: 1rem;
+   
+    font-family: "Roboto" , sans-serif;
+ }
+
+.top_layer{
+    width: 100%;
+    height: 20%;
+    background-color: #2d303d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 1rem;
+}
+
+.top_layer p{
+    color: white;
+    font-weight: 300;
+    padding: 2rem;
+    font-size: 1.4rem;
+}
+
+.main_layer{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;          /* for side by side view  */
+    padding: 2rem;
+}
+
+.main_layer #city_name{
+    color: white;
+    font-weight: 300;
+    font-size: 2rem;
+}
+
+.main_layer .middle_layer{  /* to be more specific dono likh do name like this */
+    display: flex;                        /* for side by side view  */
+    justify-content: space-around;         /* dono kae beech mae proper spacing aajega from both left and right side and in bet to   */
+    color: white;
+}
+
+.main_layer .middle_layer p,
+.main_layer .middle_layer .fa{
+    font-size: 7rem;
+    font-weight: 900;
+}
+
+.fa{
+    color: #39aeed;
+}
+
+sup{                               /* for suffix  */
+    font-size: 6rem;
+    margin-top: -2rem;
+}
+
+.data_hide{
+    visibility: hidden;
+    transition: all 0.3s linear;
+}
+
+ /* responsive code for mobile*/
+
+ @media (max-width: 768px) {              /* for phone max width 768px around */
+    
+    .main_header_left{
+        height: auto;
+        margin: 5rem 0;
+
+    }
+
+    .main_header_right{
+        height: auto;
+        margin-top: 3rem;
+    }
+ }

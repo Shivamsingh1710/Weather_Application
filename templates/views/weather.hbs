@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   {{>header}}
+</head>
+<body>
+         
+      {{>navbar}}
+
+
+    <!--main header page -->
+    <div class="container-fluid main_header">
+        <div class="row">                                       
+            <div class="col-md-10 col-12 mx-auto">
+
+                <div class="main_content">         <!-- code starts -->
+                    <form class="temp_form">    <!-- form code for box formation and searching  we need it. class added for css -->
+
+                        <input type="text" id="cityName" placeholder="Enter your city name" autocomplete="off">           <!-- input tag for taking input id is img as we need to get what user has written placeholder box kae andar ka text autocomplete off user jo likha wo waha baar baar nhi dikhna chaiya -->
+                        <input type="submit" value="search" id="submitBtn">   <!-- search option wala  value uskae andar ka text hai-->
+                    </form>
+                </div>
+
+                <div class="tempInformation">      <!-- code starts it has 2 layers 2 div -->
+                    <div class ="top_layer">
+                        <p id="day">Monday</p>
+                        <p id="today_date">20 June</p>
+                    </div>
+                    <div class="main_layer">   
+                        <p id="city_name">Get Output Here</p>
+                        <div class="middle_layer data_hide">            <!-- esmae 2 cheex side by side dikhana hai so grid system like we used in main page data_hide given to hide the data  ie  agar empty ho so no data should be visible so used data hide class-->
+                            <p id="temp"><span id="temp_real_val">0</span><sup>o</sup>C</p>  <!--suffix ka code hai sup -->
+                            <p id="temp_status"> <i class="fa fa-cloud" aria-hidden="true"></i></p>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--footer code-->
+    {{>footer}}
+
+    <script src="js/main.js">
+
+    </script>
+</body>
+</html>

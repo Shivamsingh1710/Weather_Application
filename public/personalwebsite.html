@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<style>
+    body{
+        background-color: rgb(0, 0, 33);
+        color: white;
+        font-family: 'Poppins' , sans-serif;
+    }
+    nav{
+        display: flex;
+        justify-content: space-around;
+         align-items: center;
+         height: 83px;
+         background-color: rgb(18, 18, 119);
+    }
+    nav ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    nav ul li{
+        list-style: none;
+        margin: 0 21px; 
+    }
+    nav ul a{
+        color: white;
+        text-decoration: none;
+        
+    }
+    nav ul a:hover{
+        cursor: pointer;
+        color:rgb(144, 144, 243);
+        font-size: 1.03rem;
+    }
+    .left{
+        font-size: 1.5rem;
+    } 
+    .firstsection{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 113px 0;
+    }
+    .firstsection > div{
+        width: 30%;
+    }
+    .leftsection{
+        font-size: 2.5rem;
+
+    }
+    .leftsection .buttons{
+        padding: 50px 0;
+    }
+    .leftsection .btn{
+        padding: 12px;
+        color: white;
+        background-color:  rgb(18, 18, 119);
+        border: 2px solid white;
+        border-radius: 6px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .rightsection img{
+        width: 80%;
+        margin: 50px;
+    }
+    .purple{
+        color: rgb(68, 68, 229);
+    }
+    #element{
+        color: rgb(68, 68, 229);
+    }
+    .secondsection{
+        max-width: 80vw;
+        margin: auto;
+        height: 80vh;
+    }
+    main hr{
+        border: 0;
+        background-color: rgb(153, 153, 226);
+        height: 1.3px;
+        margin: 60px 84px;
+    }
+    .secondsection h1{
+        font-size: 1.9rem;
+    }
+    .secondsection .box{
+        background: white;
+        width: 84vw;
+        height: 2px;
+        margin: 56px 0;
+        display: flex;
+    }
+    .secondsection .vertical{
+        height: 93px;
+        width: 1px;
+        background-color: white;
+        margin: 0 100px;
+    }
+    .vertical-title{
+        position: relative;
+        top: 43px;
+        width: 130px;
+
+    }
+    .vertical .top-img{
+        width: 43px;
+        position: relative;
+        top: -43px;
+        right: 22px;
+    }
+    .vertical-desc{
+        position: relative;
+        top: 60px;
+        width: 130px;
+        color: rgb(241, 206, 206);
+        font-size: 9px;
+    }
+    footer{
+        background-color:rgb(18, 18, 119);
+    }
+    .footer{
+        display: flex;
+        padding: 23px 123px;
+        justify-content: space-evenly;
+    }
+    footer ul li{
+        list-style: none;
+        margin: 0 21px; 
+    }
+    footer ul a{
+        color: white;
+        text-decoration: none;
+        
+    }
+    footer ul a:hover{
+        cursor: pointer;
+        color:rgb(144, 144, 243);
+        font-size: 1.03rem;
+    }
+    .footer > div{
+        width: 123px;
+    }
+    .footer-rights{
+        text-align: center;
+        color: grey;
+    }
+</style>
+
+<body>
+    <header>
+        <nav>
+        <div class="left">
+            <p> Shivam's portfolio</p>
+        </div>
+        <div class="right">
+            <ul>
+               <li><a href="Home">Home</a></li>
+               <li><a href="about">About</a></li>
+               <li><a href="services">Services</a></li>
+               <li><a href="projects">Projects</a></li>
+               <li><a href="contacts">Contacts</a></li>
+            </ul>
+        </div>
+    </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi,My name is <span class="purple">Shivam</span> 
+                <div>and I am a passionate</div>
+                <span id="element"></span>
+                <div class="btns">
+                    <button class="btn">Download Resume</button>
+                    <button class="btn">Visit Linkedin</button>
+                </div>
+            </div>
+
+            <div class="rightsection">
+                <img src="images/developer.png" alt="">
+            </div>
+        </section>
+        <hr>
+        <section class="secondsection">
+            <h1>Work Experience</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="top-img"  src="images/webdev.png" alt="">
+                    <div class="vertical-title">
+                        HTML Developer (2001-2003)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde omnis itaque ipsa. Architecto, ducimus distinctio libero voluptatum dolor, earum suscipit qui laudantium doloribus rerum, animi veritatis eum quaerat excepturi minus.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="top-img"  src="images/webdev.png" alt="">
+                    <div class="vertical-title">
+                        Graphic Designer (2003-2005)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde omnis itaque ipsa. Architecto, ducimus distinctio libero voluptatum dolor, earum suscipit qui laudantium doloribus rerum, animi veritatis eum quaerat excepturi minus.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="top-img"  src="images/webdev.png" alt="">
+                    <div class="vertical-title">
+                         Node js Developer (2005-2007)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde omnis itaque ipsa. Architecto, ducimus distinctio libero voluptatum dolor, earum suscipit qui laudantium doloribus rerum, animi veritatis eum quaerat excepturi minus.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="top-img"  src="images/webdev.png" alt="">
+                    <div class="vertical-title">
+                        App Designer (2007-2009)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde omnis itaque ipsa. Architecto, ducimus distinctio libero voluptatum dolor, earum suscipit qui laudantium doloribus rerum, animi veritatis eum quaerat excepturi minus.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="top-img"  src="images/webdev.png" alt="">
+                    <div class="vertical-title">
+                        HTML Designer (2009-2011)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde omnis itaque ipsa. Architecto, ducimus distinctio libero voluptatum dolor, earum suscipit qui laudantium doloribus rerum, animi veritatis eum quaerat excepturi minus.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="top-img"  src="images/webdev.png" alt="">
+                    <div class="vertical-title">
+                        Software Developer (2011-2013)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde omnis itaque ipsa. Architecto, ducimus distinctio libero voluptatum dolor, earum suscipit qui laudantium doloribus rerum, animi veritatis eum quaerat excepturi minus.
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+        <div class="footer-first">
+            <h2>Shivam's Developer Portfolio</h2>
+        </div>
+        <div class="footer-second">
+            <ul>
+                <li><a href="Home">Home</a></li>
+                <li><a href="about">About</a></li>
+                <li><a href="services">Services</a></li>
+                <li><a href="projects">Projects</a></li>
+                <li><a href="contacts">Contacts</a></li>
+             </ul>
+        </div>
+        <div class="footer-third">
+            <ul>
+                <li><a href="Home">Home</a></li>
+                <li><a href="about">About</a></li>
+                <li><a href="services">Services</a></li>
+                <li><a href="projects">Projects</a></li>
+                <li><a href="contacts">Contacts</a></li>
+             </ul>
+        </div>
+        <div class="footer-fourth">
+            <ul>
+                <li><a href="Home">Home</a></li>
+                <li><a href="about">About</a></li>
+                <li><a href="services">Services</a></li>
+                <li><a href="projects">Projects</a></li>
+                <li><a href="contacts">Contacts</a></li>
+             </ul>
+        </div>
+    </div>
+    <div class="footer-rights">
+        &copy;  Shivam's portfolio 2024, All rights reserved.
+    </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Web Developer', 'App Developer' , 'Graphics designer'],
+          typeSpeed: 50,
+        });
+      </script>
+</body>
+</html>

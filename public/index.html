@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+    <!-- yae hai font awesome ka cdn link (5.10 version) that is shivam weather kae bagal mae 2 go jo ghum raha hai wo wala chhez ka-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- jQuery library -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <title>Weather App</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container-fluid main_menu">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">    <!-- we are usimg grid system total spaces 12 assigned 10 left 2 spaces gap  -->
+                
+                <nav class="navbar navbar-expand-lg">  <!-- bootstrap code of nav bar   removed its color which was set automatic-->  
+                    <a class="navbar-brand" href="#"> <i class="far fa-snowflake"></i> ShivamWeather <i class="far fa-snowflake"></i></a>  <!--navbar title--> <!--added  far fa snoflake symbol-->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                  
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav ml-auto">    <!--changed mr-auto to ml-auto ie margin right to margin left this makes all the link go RIGHT side ie about and weather wala -->
+                        <li class="nav-item active">
+                          <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">                          <!--link -->
+                          <a class="nav-link" href="/weather">Weather</a>      <!--added link and changed href="#" to /weather like this our page name-->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about">About</a>
+                          </li>
+                        
+                      </ul>
+                     
+                    </div>
+                  </nav>
+            </div>
+        </div>
+    </div>
+
+    <!--main header page -->
+    <div class="container-fluid main_header">
+        <div class="row">                                       <!--same peace of code as above-->
+            <div class="col-md-10 col-12 mx-auto">
+                <div class="row">
+                    <!--left side div -->
+                    <div class="col-md-6 col-12 main_header_left">    <!--mobile lap dono mae thikh dikhae so we write like this espae ar dekhna hai-->
+                        <p>Welcome to Weather app</p>
+                        <h1>Get The Latest <span class="text_clr"> Weather </span> Info of your city </h1>
+                        <a href="/weather"><button>Check Now</button></a>      <!--no need to give style to buuton as we have already included above-->
+                    </div>
+                    <!-- right side div -->
+                    <div class="col-md-6 col-12 main_header_right">                <!--carosel code of bootstrap adds sliding effect-->
+                        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img class=" w-100" src="images/bg1.png" alt="First slide">
+                              </div>
+                              <div class="carousel-item">
+                                <img class=" w-100" src="images/bg1.png" alt="Second slide">           <!--change sourse and removed display block ie d-block-->
+                              </div>
+                              <div class="carousel-item">
+                                <img class=" w-100" src="images/bg1.png" alt="Third slide">
+                              </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Next</span>
+                            </a>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--footer code-->
+    <footer class="">
+        <p> &copy;  Shivam's Weather app 2024, All rights reserved.</p>   <!-- windows + .(also called period) shortcut for emoji-->
+    </footer>
+</body>
+</html>

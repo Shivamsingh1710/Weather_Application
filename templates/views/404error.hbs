@@ -1,0 +1,38 @@
+ <!-- same as index page just changed left side div to right side and vice versa-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{>header}}
+</head>
+<body>
+   
+{{>navbar}}
+
+    <!--main header page -->
+    <div class="container-fluid main_header">
+        <div class="row">                                       <!--same peace of code as above-->
+            <div class="col-md-10 col-12 mx-auto">
+                <div class="row">
+                     <!-- right side div -->
+                   
+                    <div class="col-md-12 col-12 main_header_left align-items-center">               <!--col md 12 kiyae to brimg im center-->
+                        <figure class="errimg">
+                            <img src="images/404.png" alt="" class="img-fluid" title="Error">
+                        </figure>
+            
+                       <!--left side div hata diyae only one we need so -->
+                  
+                        <p>Welcome to Weather app</p>
+                       <h1>{{errmsg}}</h1> 
+                        <a href="/"><button>Go back</button></a>      <!--here added my oersonal website and target which ensures website open in new page-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--footer code-->
+    {{>footer}}
+</body>
+</html>

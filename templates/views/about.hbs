@@ -1,0 +1,38 @@
+ <!-- same as index page just changed left side div to right side and vice versa-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{>header}}
+</head>
+<body>
+   
+{{>navbar}}
+
+    <!--main header page -->
+    <div class="container-fluid main_header">
+        <div class="row">                                       <!--same peace of code as above-->
+            <div class="col-md-10 col-12 mx-auto">
+                <div class="row">
+                     <!-- right side div -->
+                   
+                    <div class="col-md-6 col-12 main_header_right align-items-center">                <!--carosel code of bootstrap adds sliding effect-->
+                        <figure>
+                            <img src="images/man.jpg" alt="" class="img-fluid" title="Shivam">
+                        </figure>
+                    </div>
+                     <!--left side div -->
+                    <div class="col-md-6 col-12 main_header_left">    <!--mobile lap dono mae thikh dikhae so we write like this espae ar dekhna hai-->
+                        <p>Welcome to Weather app</p>
+                        <h1>I am a <span class="text_clr"> Mern Stack Developer </span> and enthusiast sportsperson. </h1>
+                        <a href="personalwebsite.html" target="_shivam"><button>About me</button></a>      <!--here added my oersonal website and target which ensures website open in new page-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--footer code-->
+    {{>footer}}
+</body>
+</html>
